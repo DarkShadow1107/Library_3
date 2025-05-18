@@ -1,0 +1,90 @@
+{
+	"books": [
+		{
+			"id": "B001",
+			"title": "The Alchemist",
+			"author": "Paulo Coelho",
+			"genre": "Adventure",
+			"year": 1988,
+			"isAvailable": false
+		},
+		{ "id": "B002", "title": "1984", "author": "George Orwell", "genre": "Dystopian", "year": 1949 },
+		{ "id": "B003", "title": "To Kill a Mockingbird", "author": "Harper Lee", "genre": "Classic", "year": 1960 },
+		{
+			"id": "B004",
+			"title": "Harry Potter and the Philosopher's Stone",
+			"author": "J.K. Rowling",
+			"genre": "Fantasy",
+			"year": 1997
+		},
+		{ "id": "B005", "title": "The Great Gatsby", "author": "F. Scott Fitzgerald", "genre": "Classic", "year": 1925 },
+		{ "id": "B006", "title": "Sapiens", "author": "Yuval Noah Harari", "genre": "Non-fiction", "year": 2011 },
+		{ "id": "B007", "title": "Dune", "author": "Frank Herbert", "genre": "Science Fiction", "year": 1965 },
+		{ "id": "B008", "title": "Pride and Prejudice", "author": "Jane Austen", "genre": "Romance", "year": 1813 },
+		{ "id": "B009", "title": "The Catcher in the Rye", "author": "J.D. Salinger", "genre": "Classic", "year": 1951 },
+		{ "id": "B010", "title": "Moby Dick", "author": "Herman Melville", "genre": "Adventure", "year": 1851 }
+	],
+	"members": [
+		{ "id": "M001", "name": "Alice Johnson", "joined": "2020-02-12" },
+		{ "id": "M002", "name": "Bob Smith", "joined": "2019-10-22" },
+		{ "id": "M003", "name": "Catherine Zeta", "joined": "2021-01-15" },
+		{
+			"id": "M004",
+			"name": "David Lee",
+			"joined": "2018-03-03",
+			"borrowedBooks": [
+				{
+					"id": "B006",
+					"title": "Sapiens",
+					"author": "Yuval Noah Harari",
+					"genre": "Non-fiction",
+					"year": 2011,
+					"isAvailable": false
+				}
+			]
+		},
+		{ "id": "M005", "name": "Elena Gilbert", "joined": "2019-08-27" },
+		{ "id": "M006", "name": "Frank Underwood", "joined": "2020-12-12" },
+		{
+			"id": "M007",
+			"name": "Grace Hopper",
+			"joined": "2017-07-09",
+			"borrowedBooks": [
+				{
+					"id": "B003",
+					"title": "To Kill a Mockingbird",
+					"author": "Harper Lee",
+					"genre": "Classic",
+					"year": 1960,
+					"isAvailable": false
+				},
+				{
+					"id": "B001",
+					"title": "The Alchemist",
+					"author": "Paulo Coelho",
+					"genre": "Adventure",
+					"year": 1988,
+					"isAvailable": false
+				}
+			]
+		},
+		{ "id": "M008", "name": "Henry Ford", "joined": "2021-05-14" },
+		{ "id": "M009", "name": "Isabella Swan", "joined": "2018-11-23" },
+		{ "id": "M010", "name": "Jack Sparrow", "joined": "2022-03-06" }
+	],
+	"transactions": [
+		{ "transactionId": "T001", "memberId": "M001", "bookId": "B001", "borrowDate": "2023-03-01", "returnDate": "2023-03-14" },
+		{ "transactionId": "T002", "memberId": "M002", "bookId": "B002", "borrowDate": "2023-04-15", "returnDate": "2023-04-28" },
+		{ "transactionId": "T003", "memberId": "M003", "bookId": "B003", "borrowDate": "2023-01-02", "returnDate": "2023-01-08" },
+		{ "transactionId": "T004", "memberId": "M004", "bookId": "B004", "borrowDate": "2023-05-07", "returnDate": "2023-05-21" },
+		{ "transactionId": "T005", "memberId": "M005", "bookId": "B005", "borrowDate": "2023-02-16", "returnDate": "2023-03-01" },
+		{ "transactionId": "T006", "memberId": "M006", "bookId": "B006", "borrowDate": "2023-06-11", "returnDate": "2023-06-25" },
+		{ "transactionId": "T007", "memberId": "M007", "bookId": "B007", "borrowDate": "2023-07-10", "returnDate": "2025-04-27" },
+		{ "transactionId": "T008", "memberId": "M008", "bookId": "B008", "borrowDate": "2023-08-20", "returnDate": "2023-08-31" },
+		{ "transactionId": "T009", "memberId": "M009", "bookId": "B009", "borrowDate": "2023-09-15", "returnDate": "2023-09-20" },
+		{ "transactionId": "T010", "memberId": "M010", "bookId": "B010", "borrowDate": "2023-10-04" },
+		{ "transactionId": "T11", "memberId": "M007", "bookId": "B003", "borrowDate": "2025-04-25", "returnDate": "2025-04-27" },
+		{ "transactionId": "T12", "memberId": "M007", "bookId": "B001", "borrowDate": "2025-04-27" },
+		{ "transactionId": "T13", "memberId": "M004", "bookId": "B006", "borrowDate": "2025-04-27" }
+	]
+}
